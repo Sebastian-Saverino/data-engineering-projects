@@ -21,10 +21,10 @@ index = 0
 
 # Jump phase
 while index < len(data) and data[index] == True:
-    index += jump
+    index += jump_amount
 
 # Linear search phase
-start = index - jump
+start = index - jump_amount
 
 for i in range(start, min(index + 1, len(data))):
     if data[i] == False:
